@@ -1,0 +1,39 @@
+{
+  "name": "indulgence",
+  "version": "1.0.0",
+  "description": "app to track self indulgence vs self care",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=production nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MotheWebDev/Indulgence.git"
+  },
+  "author": "Mo Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MotheWebDev/Indulgence/issues"
+  },
+  "homepage": "https://github.com/MotheWebDev/Indulgence#readme",
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
