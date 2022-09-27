@@ -1,1 +1,27 @@
-<h1>Dashboard</h1>
+<h6>Dashboard</h6>
+<h3>Hello {{name}}</h3>
+<p>Here are your accumulated habits</p>
+{{#if habits}}
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each habits}}
+                <tr>
+                    <td><a href="/habits/{{_id}}">{{title}}</a></td>
+                    <td>{{createdAt}}</td>
+                    <td><span class="dash-status">{{status}}</span></td>
+                    <td></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{else}}
+<p>You have not created any habits.</p>
+{{/if}}

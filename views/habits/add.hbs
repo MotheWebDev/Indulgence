@@ -1,0 +1,53 @@
+<h3>Add Habit</h3>
+<div class="row">
+    <form action="/habits" method="POST" class="col s12">
+    <div class="row">
+        <div class="input-field">
+            <input type="text" id="title" name="title">
+            <label for="title">Title</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <select id="status" name="status">
+                <option value="public" selected>Public</option>
+                <option value="private">Private</option>
+            </select>
+            <label for="status">Status</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <select id="contentment" name="contentment">
+                <option value="contentment" selected>Contentment</option>
+                <option value="discontentment">Discontentment</option>
+            </select>
+            <label for="contentment">What does this habit make you feel?</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <select id="self" name="self">
+                <option value="self-enrichment" selected>Yes</option>
+                <option value="self-centered">No</option>
+            </select>
+            <label for="self">Does this make you feel closer to the way you want to feel?</label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field">
+            <h5>Describe your habit</h5>
+            <textarea id="body" name="body"></textarea>
+        </div>
+    </div>
+
+    <div class="row">
+        <input type="submit" value="Save" class="btn">
+        <a href="dashboard" class="btn orange">Cancel</a>
+    </div>
+    </form>
+</div>
