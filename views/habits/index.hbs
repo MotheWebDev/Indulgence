@@ -1,4 +1,4 @@
-<h1>Habits</h1>
+<h1>Public Habits</h1>
 <div class="row">
     {{#each habits}}
         <div class="col s12 m4">
@@ -6,17 +6,17 @@
                 <div class="card-image">
                     {{{editIcon user ../user _id}}}
                 </div>
-                <div class="card-content center-align">
+                <div class="card-content left-align">
                     <h5>{{title}}</h5>
-                    <p>{{stripTags (truncate body 150)}}</p>
+                    <p>{{stripTags (truncate body 20)}}</p>
                     <br>
                     <div class="chip">
                         
                         <a href="/habits/user/{{user._id}}">{{user.firstName}}</a>
                     </div>
                 </div>
-                <div class="card-action center-align">
-                    <a href="/habits/{{_id}}" class="btn grey">Read More</a>
+                <div class="card-action left-align">
+                    <a href="/habits/{{_id}}" class="btn">Read More</a>
                 </div>
             </div>
 

@@ -9,6 +9,13 @@
                 {{{habit.body}}}
             </div>
         </div>
+        <div class="card habit">
+            <div class="card-content">
+                {{#with habit}}
+                <span>This brings me {{contentment}}, and overall makes me feel {{self}}.</span>
+                {{/with}}
+            </div>
+        </div>
     </div>
     <div class="col s12 m4">
         <div class="card center-align">

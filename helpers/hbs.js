@@ -20,7 +20,7 @@ module.exports = {
     editIcon: function (habitUser, loggedUser, habitId, floating = true) {
         if (habitUser._id.toString() == loggedUser._id.toString()) {
             if (floating) {
-                return `<a href="/habits/edit/${habitId}" class="btn-floating halfway-fab blue"><i class="fas fa-edit fa-small"></i></a>`
+                return `<a href="/habits/edit/${habitId}" class="btn-floating halfway-fab btn"><i class="fas fa-edit fa-small"></i></a>`
             } else {
                 return `<a href="/habits/edit/${habitId}"><i class="fas fa-edit"></i></a>`
             }

@@ -1,12 +1,17 @@
 <h6>Dashboard</h6>
 <h3>Hello {{name}}</h3>
-<p>Here are your accumulated habits</p>
+<h4>What is Self-Indulgence vs. Self-Care?</h4>
+<p>Self Indulgence is rooted in the chase of dopamine, or instant gratification. It feels good in the moment but is usually followed by regret shortly after. It leads to discontentment. It leads to irritability, tiredness, and furthers our stress, rather than helping reduce it. It is the opposite of genuine self-care.</p>
+<p>True self-care requires proactivity to cultivate beneficial outcomes. This means brushing your teeth, exercising, etc. It takes active control to maintain our health and responsibilities. Self-care will become problematic when these activities start to take over our lives, or distract us from other problems. #TreatYourself is fine for a moment, but not as a habit. If an activity creates contentment and poitively influences you, then we want to foster that habit to create a a long-term process and further our appreciation for ourselves.</p>
+
+<p>Here are your accumulated habits;</p>
 {{#if habits}}
     <table class="striped">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Date</th>
+                <th>Contentment and Self</th>
                 <th>Status</th>
                 <th></th>
             </tr>
@@ -14,11 +19,12 @@
         <tbody>
             {{#each habits}}
                 <tr>
-                    <td><a href="/habits/{{_id}}">{{title}}</a></td>
+                    <td><a class="large-text" href="/habits/{{_id}}">{{title}}</a></td>
                     <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
+                    <td><span class="dash-status">{{contentment}} &amp; {{self}}</span></td>
                     <td><span class="dash-status">{{status}}</span></td>
                     <td>
-                        <a href="/habits/edit/{{_id}}" class="btn btn-float">
+                        <a href="/habits/edit/{{_id}}" class="btn btn-float edit-btn">
                         <i class="fas fa-edit"></i>
                         </a>
 

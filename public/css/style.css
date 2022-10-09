@@ -11,11 +11,47 @@ p{
     font-size: 16px !important; 
 }
 
-.btn-float {
-    float: left;
+
+.edit-btn {
+    width: 48.44px;
+    height: 36px;
+    background-color: #E8AC65 !important;
+    display: flex;
+    justify-content: space-around;
     margin-right: 10px;
 }
 
 .img-small {
     width: 180px;
 }
+.large-text{
+    font-size: 1.5rem;
+}
+/* COLORS */
+nav{
+    margin-bottom: 60px;
+    background-color: #797D62 !important;
+}
+.sidenav{
+    background-color: #FEFAE0;
+    color: #444140;
+}
+body{
+    background-color: #FAEDCD;
+    color: #444140;
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+    background-color: #F1DCA7;
+}
+a{
+    color: #444140;
+}
+.btn{
+    background-color: #E8AC65;
+}
+.chip{
+    background-color: #E8AC65;
+}
+
+
